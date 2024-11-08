@@ -1,4 +1,4 @@
-# Students
+# Students - feladat
 
 1.    Hozzon létre osztály Student néven az iskolai diákok tárolására!
 2.    Az osztályban deklaráljon property-ket a név, és életkor megadására!
