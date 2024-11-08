@@ -1,21 +1,9 @@
 namespace Students.Models;
 
-public class Student
+public class Student(string name = "Ismeretlen", int age = 0)
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
-
-    public Student()
-    {
-        Name = "";
-        Age = 0;
-    }
-
-    public Student(string name, int age)
-    {
-        Name = name;
-        Age = age;
-    }
+    private string Name { get; set; } = name;
+    private int Age { get; set; } = age;
 
     public override string ToString()
     {
