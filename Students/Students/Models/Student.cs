@@ -14,4 +14,24 @@ public class Student(string name = "Ismeretlen", int age = 0)
     {
         return student1.Name == student2.Name && student1.Age == student2.Age;
     }
+
+    public static bool NamesAreDifferent(Student student1, Student student2)
+    {
+        return student1.Name != student2.Name && student1.Age == student2.Age;
+    }
+    
+    public static bool AgesAreDifferent(Student student1, Student student2)
+    {
+        return student1.Name == student2.Name && student1.Age != student2.Age;
+    }
+    
+    public static bool AllDataIsDifferent(Student student1, Student student2)
+    {
+        return student1.Name != student2.Name && student1.Age != student2.Age;
+    }
+
+    public static bool IsYounger(Student student1, Student student2)
+    {
+        return student1.Age < student2.Age;
+    }
 }
