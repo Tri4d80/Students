@@ -21,4 +21,9 @@ public class Student
     {
         return $"{Name} ({Age} éves)";
     }
+
+    public static bool EqualTo(Student student1, Student student2)
+    {
+        return student1.Name == student2.Name && student1.Age == student2.Age;
+    }
 }
